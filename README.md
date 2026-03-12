@@ -5,9 +5,9 @@ The Inteligent-Model-Rocket is an experimental sounding rocket developed as a fi
 
 Repository structure:
 
-nimbus2024/: The core flight software. It manages the main mission logic (Sequential Functional Chart), sensor data fusion (IMU + Barometer), and the autonomous recovery trigger.
+space_rocket.ino: The core flight software. It manages the main mission logic (Sequential Functional Chart), sensor data fusion (IMU + Barometer), and the autonomous recovery trigger.
 
-ground_test/: Specialized firmware used for static testing of the ejection charges and the parachute deployment mechanism.
+ground_test.ino: Specialized firmware used for static testing of the ejection charges and the parachute deployment mechanism.
 
 launch_test.ino: Ground-based simulation code designed to verify the reliability of the Apogee detection algorithms.
 
