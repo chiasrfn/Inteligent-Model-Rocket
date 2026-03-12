@@ -9,7 +9,7 @@ nimbus2024/: The core flight software. It manages the main mission logic (Sequen
 
 ground_test/: Specialized firmware used for static testing of the ejection charges and the parachute deployment mechanism.
 
-test_lancio/: Ground-based simulation code designed to verify the reliability of the Apogee detection algorithms.
+launch_test.ino: Ground-based simulation code designed to verify the reliability of the Apogee detection algorithms.
 
 test_hz_imu/: A utility script used to benchmark and optimize the sampling frequency of the sensors (up to 560Hz for the controller).
 
