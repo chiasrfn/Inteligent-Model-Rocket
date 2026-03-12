@@ -11,9 +11,9 @@ ground_test.ino: Specialized firmware used for static testing of the ejection ch
 
 launch_test.ino: Ground-based simulation code designed to verify the reliability of the Apogee detection algorithms.
 
-test_hz_imu/: A utility script used to benchmark and optimize the sampling frequency of the sensors (up to 560Hz for the controller).
+sensor_test.ino: A utility script used to benchmark and optimize the sampling frequency of the sensors (up to 560Hz for the controller).
 
-calibrazione_sensori/: A collection of scripts and data used for the calibration of the BNO085 IMU and BMP390 barometer to minimize measurement bias during high-acceleration flight.
+sensor_calibration: A collection of scripts and data used for the calibration of the BNO085 IMU and BMP390 barometer to minimize measurement bias during high-acceleration flight.
 
 Key Technical Specs:
 1) Microcontroller: ESP-32.
