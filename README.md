@@ -1,26 +1,47 @@
-# Inteligent-Model-Rocket
-Flight Control &amp; Apogee Detection
+# Intelligent-Model-Rocket
+**Flight Control and Apogee Detection**
 
-The Inteligent-Model-Rocket is an experimental sounding rocket developed as a final project for an exam of the Automation Engineering course (January 2024) at Sapienza University of Rome. The primary objective of the mission was to design and build a vehicle capable of autonomously reaching Apogee, detecting it through sensor fusion, and executing a safe recovery via automated parachute deployment.This project integrates high-frequency data acquisition, real-time state estimation via Kalman Filtering, and custom-built power electronics for pyrotechnic ignition.
+---
 
-Repository structure:
+## Project Overview
+The Intelligent-Model-Rocket is an experimental sounding rocket developed as a final project for the Automation Engineering course (January 2024) at **Sapienza University of Rome**. 
 
-space_rocket.ino: The core flight software. It manages the main mission logic (Sequential Functional Chart), sensor data fusion (IMU + Barometer), and the autonomous recovery trigger.
+The primary mission objective was to design and construct a vehicle capable of:
+* Autonomously reaching Apogee.
+* Detecting the peak altitude through multi-sensor data fusion.
+* Executing a safe recovery via an automated parachute deployment system.
 
-ground_test.ino: Specialized firmware used for static testing of the ejection charges and the parachute deployment mechanism.
+This project integrates high-frequency data acquisition, real-time state estimation via Kalman Filtering, and custom-built power electronics for pyrotechnic ignition.
 
-launch_test.ino: Ground-based simulation code designed to verify the reliability of the Apogee detection algorithms.
+---
 
-sensor_test.ino: A utility script used to benchmark and optimize the sampling frequency of the sensors (up to 560Hz for the controller).
+## Repository Structure
 
-sensor_calibration: A collection of scripts and data used for the calibration of the BNO085 IMU and BMP390 barometer to minimize measurement bias during high-acceleration flight.
+* `space_rocket.ino`: **Core Flight Software.** Manages the main mission logic (Sequential Functional Chart), sensor data fusion (IMU + Barometer), and the autonomous recovery trigger.
+* `ground_test.ino`: Specialized firmware used for static testing of ejection charges and the parachute deployment mechanism.
+* `launch_test.ino`: Ground-based simulation code designed to verify the reliability of Apogee detection algorithms.
+* `sensor_test.ino`: Utility script used to benchmark and optimize sampling frequency (up to 560Hz for the controller).
+* `sensor_calibration/`: A collection of scripts and data used to calibrate the BNO085 IMU and BMP390 barometer, minimizing measurement bias during high-acceleration phases.
 
-Key Technical Specs:
-1) Microcontroller: ESP-32.
-2) Navigation: 6-DOF Sensor Fusion with Kalman Filter.
-3) Telemetry: Real-time monitoring via Wi-Fi.
-4) Recovery: Dual-deployment ready pyrotechnic channels
+---
 
+## Technical Specifications
 
+* **Microcontroller**: ESP-32
+* **Navigation**: 6-DOF Sensor Fusion with Kalman Filter
+* **Telemetry**: Real-time monitoring via Wi-Fi
+* **Recovery System**: Dual-deployment ready pyrotechnic channels
+* **Sampling Rate**: Up to 560Hz
 
-Launch video: https://drive.google.com/drive/folders/1Z4qFGuhKrDvThmkjfc8BpkpILZe07uZE?usp=sharing
+---
+
+## Documentation and Media
+
+* **Technical Report**: Detailed analysis of the rocket's design, sensor fusion algorithms, and test results (Available in Italian in the `docs/` folder).
+* **Launch Video**: [Watch the flight test here](https://drive.google.com/drive/folders/1Z4qFGuhKrDvThmkjfc8BpkpILZe07uZE?usp=sharing).
+---
+
+## Academic Context
+* **Institution**: Sapienza University of Rome
+* **Course**: Automation Engineering
+* **Date**: January 2024
