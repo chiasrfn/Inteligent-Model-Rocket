@@ -17,12 +17,15 @@ This project integrates high-frequency data acquisition, real-time state estimat
 
 ## Repository Structure
 
-* `space_rocket.ino`: **Core Flight Software.** Manages the main mission logic (Sequential Functional Chart), sensor data fusion (IMU + Barometer), and the autonomous recovery trigger.
-* `ground_test.ino`: Specialized firmware used for static testing of ejection charges and the parachute deployment mechanism.
-* `launch_test.ino`: Ground-based simulation code designed to verify the reliability of Apogee detection algorithms.
-* `sensor_test.ino`: Utility script used to benchmark and optimize sampling frequency (up to 560Hz for the controller).
+* `code/`: Contains all flight and test firmware:
+    * `space_rocket.ino`: **Core Flight Software.** Manages the main mission logic (Sequential Functional Chart), sensor data fusion (IMU + Barometer), and the autonomous recovery trigger.
+    * `ground_test.ino`: Specialized firmware used for static testing of ejection charges and the parachute deployment mechanism.
+    * `launch_test.ino`: Ground-based simulation code designed to verify the reliability of Apogee detection algorithms.
+    * `sensor_test.ino`: Utility script used to benchmark and optimize sampling frequency (up to 560Hz for the controller).
+* `docs/`: Contains the full technical documentation:
+    * `Technical_Report.pdf`: A comprehensive document detailing the rocket's design, mathematical models, and flight analysis (Available in Italian).
 * `sensor_calibration/`: A collection of scripts and data used to calibrate the BNO085 IMU and BMP390 barometer, minimizing measurement bias during high-acceleration phases.
-
+* `images/`: A selection of the most significant photos and plots from the development, assembly, and launch phases.
 ---
 
 ## Technical Specifications
