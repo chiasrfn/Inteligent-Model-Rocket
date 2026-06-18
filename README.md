@@ -25,7 +25,7 @@ This project integrates high-frequency data acquisition, real-time state estimat
 * `docs/`: Contains the full technical documentation:
     * `Technical_Report.pdf`: A comprehensive document detailing the rocket's design, mathematical models, and flight analysis (Available in Italian).
 * `sensor_calibration/`: A collection of scripts and data used to calibrate the BNO085 IMU and BMP390 barometer, minimizing measurement bias during high-acceleration phases.
-* `images/`: A selection of the most significant photos and plots from the development, assembly, and launch phases.
+* `images/`: A selection of the most significant photos and plots from the launch phases.
 ---
 
 ## Technical Specifications
